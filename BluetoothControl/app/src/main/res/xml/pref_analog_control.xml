@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:key="enable_analog"
+        android:defaultValue="true"
+        android:title="@string/enable" />
+
+    <EditTextPreference
+        android:dependency="enable_analog"
+        android:key="analog_up_key"
+        android:title="@string/up_key" />
+
+    <EditTextPreference
+        android:dependency="enable_analog"
+        android:key="analog_up_right_key"
+        android:title="@string/up_right_key" />
+
+    <EditTextPreference
+        android:dependency="enable_analog"
+        android:key="analog_right_key"
+        android:title="@string/right_key" />
+
+    <EditTextPreference
+        android:dependency="enable_analog"
+        android:key="analog_down_right_key"
+        android:title="@string/down_right_key" />
+
+    <EditTextPreference
+        android:dependency="enable_analog"
+        android:key="analog_down_key"
+        android:title="@string/down_key" />
+
+    <EditTextPreference
+        android:dependency="enable_analog"
+        android:key="analog_down_left_key"
+        android:title="@string/down_left_key" />
+
+    <EditTextPreference
+        android:dependency="enable_analog"
+        android:key="analog_left_key"
+        android:title="@string/left_key" />
+
+    <EditTextPreference
+        android:dependency="enable_analog"
+        android:key="analog_up_left_key"
+        android:title="@string/up_left_key" />
+
+</PreferenceScreen>

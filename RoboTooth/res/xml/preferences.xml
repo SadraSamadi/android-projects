@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="setting" >
+        
+		<PreferenceCategory
+	    	android:title="سنسور Gravity"
+	        android:key="gravSens" >
+	            
+	        <CheckBoxPreference
+	        	android:title="فعال / غیرفعال"
+	            android:summary="با کج کردن گوشی، داده ای را ارسال کنید"
+	            android:defaultValue="false"
+	            android:key="useGrav" />
+	            
+	        <ListPreference
+                android:title="حساسیت Gravity"
+                android:entryValues="@array/gravity_sensitivity"
+                android:entries="@array/sensitivity"
+                android:key="gravity_sens"
+                android:defaultValue="5"
+                android:summary="تنظیم حساسیت" />
+            
+            <EditTextPreference
+                android:key="up_gravity_key"
+                android:title="جلو"
+                android:summary=" داده ارسالی" />
+            
+            <EditTextPreference
+                android:key="down_gravity_key"
+                android:title="عقب"
+                android:summary="داده ارسالی" />
+            
+            <EditTextPreference
+                android:key="right_gravity_key"
+                android:title="راست"
+                android:summary="داده ارسالی" />
+            
+            <EditTextPreference
+                android:key="left_gravity_key"
+                android:title="چپ"
+                android:summary="داده ارسالی" />
+            
+        </PreferenceCategory>
+        
+        <PreferenceCategory
+            android:title="سنسور Linear Acceleration"
+            android:key="linAccSens" >
+            
+            <CheckBoxPreference
+	            android:key="useAcc"
+	            android:summary="با تکان دادن گوشی، داده ای را ارسال کنید"
+	            android:defaultValue="false"
+	            android:title="فعال / غیرفعال" />
+            
+            <ListPreference
+                android:title="حساسیت Acc"
+                android:key="linear_acc_sens"
+                android:entryValues="@array/linear_acceleretion_sensitivity"
+                android:entries="@array/sensitivity"
+                android:defaultValue="30"
+                android:summary="تنظیم حساسیت"/>
+            
+	            <EditTextPreference
+	                android:key="shake_key"
+	                android:title="تکان"
+	                android:summary="داده ارسالی" />
+            
+        </PreferenceCategory>
+        
+        <PreferenceCategory
+            android:key="proxSens"
+            android:title="سنسور Proximity" >
+	            
+	            <CheckBoxPreference
+		            android:summary="با قراردادن دست خود جلوی گوشی، داده ای را ارسال کنید"
+		            android:title="فعال / غیرفعال"
+		            android:key="useProx"
+		            android:defaultValue="false" />
+	            
+        		<EditTextPreference
+        		    android:key="prox_key"
+        		    android:title="مجاورت"
+        		    android:summary="داده ارسالی" />
+        		
+		</PreferenceCategory>
+		
+		        <PreferenceCategory
+		            android:title="کنترل آنالوگ"
+		            android:key="analogBtn" >
+		            
+		            <CheckBoxPreference
+		                android:title="فعال / غیرفعال"
+		                android:summary="با چرخاندن کلید، داده ای را ارسال کنید"
+		                android:defaultValue="true"
+		                android:key="useAnalog" />
+		            
+		            <EditTextPreference
+		                android:key="up_analog_key"
+		                android:title="بالا"
+		                android:summary=" داده ارسالی" />
+		            
+		            <EditTextPreference
+		                android:key="down_analog_key"
+		                android:title="پایین"
+		                android:summary="داده ارسالی" />
+		            
+		            <EditTextPreference
+		                android:key="right_analog_key"
+		                android:title="راست"
+		                android:summary="داده ارسالی" />
+		            
+		            <EditTextPreference
+		                android:key="left_analog_key"
+		                android:title="چپ"
+		                android:summary="داده ارسالی" />
+		            
+		        </PreferenceCategory>
+		        
+		        <PreferenceCategory
+		            android:key="dataField"
+		            android:title="فیلد ارسال داده" >
+		            
+		            <CheckBoxPreference
+		                android:key="useDataField"
+		                android:summary="برای ارسال داده های دلخواه میتوانید از این فیلد استفاده کنید"
+		                android:defaultValue="true"
+		                android:title="فعال / غیرفعال" />
+		            
+		        </PreferenceCategory>
+		        
+		        <PreferenceCategory
+		            android:title="کلید 1"
+		            android:key="button1" >
+		            
+		            <CheckBoxPreference
+		                android:key="useBtn1"
+		                android:summary="از این کلید استفاده میکنید"
+		                android:defaultValue="true"
+		                android:title="فعال / غیرفعال" />
+		            
+		            <EditTextPreference
+		                android:key="name_btn1"
+		                android:title="نام"
+		                android:summary="یک اسم برای کلید انتخاب کنید" />
+		            
+		            <EditTextPreference
+		                android:key="btn1_key"
+		                android:title="کلید"
+		                android:summary="داده ارسالی" />
+		            
+		        </PreferenceCategory>
+		        
+		        <PreferenceCategory
+		            android:title="کلید 2"
+		            android:key="button2" >
+		            
+		            <CheckBoxPreference
+		                android:key="useBtn2"
+		                android:summary="از این کلید استفاده میکنید"
+		                android:defaultValue="true"
+		                android:title="فعال / غیرفعال" />
+		            
+		            <EditTextPreference
+		                android:key="name_btn2"
+		                android:title="نام"
+		                android:summary="یک اسم برای کلید انتخاب کنید" />
+		            
+		            <EditTextPreference
+		                android:key="btn2_key"
+		                android:title="کلید"
+		                android:summary="داده ارسالی" />
+		            
+		        </PreferenceCategory>
+		        
+		        <PreferenceCategory
+		            android:title="کلید 3"
+		            android:key="button3" >
+		            
+		            <CheckBoxPreference
+		                android:key="useBtn3"
+		                android:summary="از این کلید استفاده میکنید"
+		                android:defaultValue="true"
+		                android:title="فعال / غیرفعال" />
+		            
+		            <EditTextPreference
+		                android:key="name_btn3"
+		                android:title="نام"
+		                android:summary="یک اسم برای کلید انتخاب کنید" />
+		            
+		            <EditTextPreference
+		                android:key="btn3_key"
+		                android:title="کلید"
+		                android:summary="داده ارسالی" />
+		            
+		        </PreferenceCategory>
+		        
+		        <PreferenceCategory
+		            android:title="کلید 4"
+		            android:key="button4" >
+		            
+		            <CheckBoxPreference
+		                android:key="useBtn4"
+		                android:summary="از این کلید استفاده میکنید"
+		                android:defaultValue="true"
+		                android:title="فعال / غیرفعال" />
+		            
+		            <EditTextPreference
+		                android:key="name_btn4"
+		                android:title="نام"
+		                android:summary="یک اسم برای کلید انتخاب کنید" />
+		            
+		            <EditTextPreference
+		                android:key="btn4_key"
+		                android:title="کلید"
+		                android:summary="داده ارسالی" />
+		            
+		        </PreferenceCategory>
+		        
+		        <PreferenceCategory
+		            android:title="کلید 5"
+		            android:key="button5" >
+		            
+		            <CheckBoxPreference
+		                android:key="useBtn5"
+		                android:summary="از این کلید استفاده میکنید"
+		                android:defaultValue="true"
+		                android:title="فعال / غیرفعال" />
+		            
+		            <EditTextPreference
+		                android:key="name_btn5"
+		                android:title="نام"
+		                android:summary="یک اسم برای کلید انتخاب کنید" />
+		            
+		            <EditTextPreference
+		                android:key="btn5_key"
+		                android:title="کلید"
+		                android:summary="داده ارسالی" />
+		            
+		        </PreferenceCategory>
+		        
+		        <PreferenceCategory
+		            android:title="کلید 6"
+		            android:key="button6" >
+		            
+		            <CheckBoxPreference
+		                android:key="useBtn6"
+		                android:summary="از این کلید استفاده میکنید"
+		                android:defaultValue="true"
+		                android:title="فعال / غیرفعال" />
+		            
+		            <EditTextPreference
+		                android:key="name_btn6"
+		                android:title="نام"
+		                android:summary="یک اسم برای کلید انتخاب کنید" />
+		            
+		            <EditTextPreference
+		                android:key="btn6_key"
+		                android:title="کلید"
+		                android:summary="داده ارسالی" />
+		            
+		        </PreferenceCategory>
+		        
+		        <PreferenceCategory
+		            android:title="کلید 7"
+		            android:key="button7" >
+		            
+		            <CheckBoxPreference
+		                android:key="useBtn7"
+		                android:summary="از این کلید استفاده میکنید"
+		                android:defaultValue="true"
+		                android:title="فعال / غیرفعال" />
+		            
+		            <EditTextPreference
+		                android:key="name_btn7"
+		                android:title="نام"
+		                android:summary="یک اسم برای کلید انتخاب کنید" />
+		            
+		            <EditTextPreference
+		                android:key="btn7_key"
+		                android:title="کلید"
+		                android:summary="داده ارسالی" />
+		            
+		        </PreferenceCategory>
+		        
+		        <PreferenceCategory
+		            android:title="کلید 8"
+		            android:key="button8" >
+		            
+		            <CheckBoxPreference
+		                android:key="useBtn8"
+		                android:summary="از این کلید استفاده میکنید"
+		                android:defaultValue="true"
+		                android:title="فعال / غیرفعال" />
+		            
+		            <EditTextPreference
+		                android:key="name_btn8"
+		                android:title="نام"
+		                android:summary="یک اسم برای کلید انتخاب کنید" />
+		            
+		            <EditTextPreference
+		                android:key="btn8_key"
+		                android:title="کلید"
+		                android:summary="داده ارسالی" />
+		            
+		        </PreferenceCategory>
+		        
+		        <PreferenceCategory
+		            android:title="کلید 9"
+		            android:key="button9" >
+		            
+		            <CheckBoxPreference
+		                android:key="useBtn9"
+		                android:summary="از این کلید استفاده میکنید"
+		                android:defaultValue="true"
+		                android:title="فعال / غیرفعال" />
+		            
+		            <EditTextPreference
+		                android:key="name_btn9"
+		                android:title="نام"
+		                android:summary="یک اسم برای کلید انتخاب کنید" />
+		            
+		            <EditTextPreference
+		                android:key="btn9_key"
+		                android:title="کلید"
+		                android:summary="داده ارسالی" />
+		            
+		        </PreferenceCategory>
+		        
+		</PreferenceScreen>

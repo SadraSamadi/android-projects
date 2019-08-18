@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="horizontalPadding">10dp</dimen>
+    <dimen name="verticalPadding">20dp</dimen>
+    <dimen name="mediumFontSize">14sp</dimen>
+    <dimen name="lineViewHeight">5dp</dimen>
+    <dimen name="mediumSpace">5dp</dimen>
+    <dimen name="smallSpace">3dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="logo_size">120dp</dimen>
+    <dimen name="layout_about_padding">20dp</dimen>
+    <dimen name="largeSpace">10dp</dimen>
+    <dimen name="largeFontSize">16sp</dimen>
+    <dimen name="buttonEditTextWidth">60dp</dimen>
+</resources>

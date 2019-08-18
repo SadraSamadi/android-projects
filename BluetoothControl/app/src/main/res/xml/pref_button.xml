@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="button_enable0"
+        android:title="@string/enable_button0" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="button_enable1"
+        android:title="@string/enable_button1" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="button_enable2"
+        android:title="@string/enable_button2" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="button_enable3"
+        android:title="@string/enable_button3" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="button_enable4"
+        android:title="@string/enable_button4" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="button_enable5"
+        android:title="@string/enable_button5" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="button_enable6"
+        android:title="@string/enable_button6" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="button_enable7"
+        android:title="@string/enable_button7" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="button_enable8"
+        android:title="@string/enable_button8" />
+
+</PreferenceScreen>

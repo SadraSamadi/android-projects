@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Torch</string>
+    <string name="text">Turn on/off the torch</string>
+    <string name="not_supported">Not Supported !!!</string>
+    <string name="image_view_description">image for flash mode</string>
+
+</resources>

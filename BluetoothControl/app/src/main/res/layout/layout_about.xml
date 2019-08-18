@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/smallSpace"
+        android:background="@color/holoBlueLight" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightGray"
+        android:padding="@dimen/layout_about_padding">
+
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="@dimen/logo_size"
+            android:layout_height="@dimen/logo_size"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/logo"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/appNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logoImageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/largeSpace"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/largeFontSize"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/appVersionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/appNameTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/mediumSpace"
+            android:text="@string/version"
+            android:textColor="@color/black"
+            android:textSize="@dimen/largeFontSize"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/developerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/appVersionTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/largeSpace"
+            android:text="@string/developer"
+            android:textColor="@color/black"
+            android:textSize="@dimen/largeFontSize"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/smallSpace"
+        android:background="@color/holoBlueLight" />
+
+</LinearLayout>
